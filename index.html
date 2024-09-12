@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transaction</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="stories">
+        <li></li>
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <div class="navigation">
+        <div class="go-back">
+          <div class="icon"><i class="ph ph-arrow-left"></i></div>
+          <p>Go back to Signup</p>
+        </div>
+        <div class="next">
+          <p>Skip Step</p>
+          <div class="icon"><i class="ph ph-arrow-right"></i></div>
+        </div>
+      </div>
+
+      <header>
+        <div class="header">
+          <h1>Transaction details</h1>
+          <p>We just need some basic info to get your profile setup.</p>
+        </div>
+        <strong>$ 10,000 USD</strong>
+      </header>
+
+      <div class="line"></div>
+
+      <main>
+        <ul>
+          <li>
+            <div class="check"><i class="ph ph-check"></i></div>
+            <div class="info">
+              <p>Today at 12:03 PM</p>
+              <strong>You set up a transfer.</strong>
+            </div>
+          </li>
+          <li>
+            <div class="check"><i class="ph ph-check"></i></div>
+            <div class="info">
+              <p>Today at 12:03 PM</p>
+              <strong>You used your checking account balance.</strong>
+            </div>
+          </li>
+          <li>
+            <div class="check"><i class="ph ph-check"></i></div>
+            <div class="info">
+              <p>Today at 12:03 PM</p>
+              <strong>Today at 12:03 PM.</strong>
+            </div>
+          </li>
+          <li>
+            <div class="check active"><i class="ph ph-check"></i></div>
+            <div class="info">
+              <p>Today at 12:03 PM</p>
+              <strong>Your transfer is complete</strong>
+            </div>
+          </li>
+        </ul>
+
+        <div class="transfering">
+          <strong>Transfering Funds</strong>
+
+          <form>
+            <div class="form-field">
+              <div class="label">
+                <div class="avatar">JD</div>
+                <p>You Send</p>
+              </div>
+
+              <div class="box-input">
+                <input type="text" placeholder="$ 10,000 USD" />
+                <img src="./assets/eua.svg" alt="" />
+              </div>
+            </div>
+            <div class="form-field">
+              <div class="label">
+                <div class="avatar">OB</div>
+                <p>Recipient will recieve</p>
+              </div>
+
+              <div class="box-input">
+                <input type="text" placeholder="$168,379.90  PESO" />
+                <img src="./assets//mexico.svg" alt="" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+      <button>Make Transfer</button>
+    </div>
+  </body>
+</html>

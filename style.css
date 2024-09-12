@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebecf0;
+}
+
+.container {
+  width: 71.1rem;
+  margin: 0 auto;
+  padding: 4rem;
+  background-color: #ffffff;
+  border-radius: 1.6rem;
+}
+
+.stories {
+  display: flex;
+  list-style: none;
+  gap: 0.7rem;
+}
+
+.stories li {
+  height: 0.9rem;
+  background-color: #e9effd;
+  flex: 1;
+}
+
+.stories li.active {
+  background-color: #2f5cf1;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.9rem;
+}
+
+.navigation .go-back,
+.navigation .next {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.navigation .next {
+  color: #2f5cf1;
+}
+
+.navigation .go-back .icon,
+.navigation .next .icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation .go-back .icon {
+  background-color: #eeeeee;
+}
+
+.navigation .next .icon {
+  background-color: #e7eefe;
+}
+
+.navigation .go-back .icon i,
+.navigation .next .icon i {
+  font-weight: 600;
+}
+
+.navigation .go-back p,
+.navigation .next p {
+  font-size: 1.27rem;
+  font-weight: 500;
+}
+
+.navigation .next p {
+  color: #2f5cf1;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+
+header .header {
+  gap: 1.2rem;
+}
+
+header .header h1 {
+  font-size: 2.5rem;
+}
+
+header .header p {
+  font-size: 1.26rem;
+  color: #868688;
+  font-weight: 500;
+}
+
+header .header strong {
+  font-size: 1.8rem;
+}
+
+.line {
+  margin-top: 1.8rem;
+  height: 0.3rem;
+  background-color: #eeeeee;
+}
+
+main {
+  margin-top: 4.9rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+main ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 2.3rem;
+  padding: 0 0.3rem;
+}
+
+main ul li {
+  display: flex;
+  gap: 1.3rem;
+  transition: all 300ms linear;
+  cursor: pointer;
+}
+
+main ul li:hover .check {
+  border-color: #2f5cf1;
+  cursor: pointer;
+}
+
+main ul li:hover .check i {
+  color: #2f5cf1;
+}
+
+main ul li .check {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 0.1rem solid #cccccc;
+}
+
+main ul li .check i {
+  font-weight: 600;
+  color: #cacaca;
+}
+
+main ul li .check.active {
+  border: 0.1rem solid #2f5cf1;
+}
+
+main ul li .check.active i {
+  color: #2f5cf1;
+}
+
+main ul li .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+ul li .info p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #868688;
+}
+
+main ul li .info strong {
+  font-size: 1.12rem;
+  font-weight: 600;
+}
+
+.transfering {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  flex: 1;
+}
+
+.transfering strong {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.transfering form {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.transfering form .form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.transfering form .form-field .label {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.transfering form .form-field .label .avatar {
+  width: 1.8rem;
+  height: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
+
+.transfering form .form-field:first-child .label .avatar {
+  background-color: #d3b5fb;
+}
+
+.transfering form .form-field:nth-child(2) .label .avatar {
+  background-color: #c5fcb6;
+}
+
+.transfering form .form-field .label p {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.transfering form .form-field .box-input {
+  display: flex;
+  border-radius: 0.6rem;
+  border: 0.1rem solid #cacaca;
+  padding: 0 1.6rem;
+  gap: 0.8rem;
+}
+
+.transfering form .form-field .box-input input {
+  flex: 1;
+  height: 3.7rem;
+  outline: 0;
+  border: none;
+}
+
+.transfering form .form-field .box-input input::placeholder {
+  color: #7c7c7c;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.container button {
+  margin-top: 4.9rem;
+  width: 100%;
+  background-color: #305cf1;
+  border-radius: 0.6rem;
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 1.6rem 1.8rem;
+  cursor: pointer;
+  transition: all 300ms linear;
+}
+
+.container button:hover {
+  opacity: 90%;
+}
